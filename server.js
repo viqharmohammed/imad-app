@@ -9,15 +9,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
   
-app.get('/viqhar',function (req,res){
+app.get('/one',function (req,res){
       res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 app.get('/two',function (req,res){
-       res.sendFile(path.join(__dirname, 'ui', 'vm.html'));
+       res.sendFile(path.join(__dirname, 'ui', 'vlm.html'));
 });
 app.get('/three',function (req,res){
-       res.sendFile(path.join(__dirname, 'ui', 'vlm.html'));
+       res.sendFile(path.join(__dirname, 'ui', 'vm.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
