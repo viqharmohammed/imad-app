@@ -16,8 +16,8 @@ var articles={
                 viqhar loves mariya alot...
               </p>`
 },
-`article-two:{
-      title:'viqhar mariya',
+'article-two:{
+  title:'viqhar mariya',
   heading:'mariya',
   date: 'august 25,2017',
   content: ` <p>
@@ -31,7 +31,7 @@ var articles={
   date: 'august 25,2017',
   content: ` <p>
                they love each other alot.cant live with out each other.lets see how their love goes on
-              </p>`
+             
 },
 };
 function createTemplate (data){
