@@ -5,12 +5,56 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var vickymaru={
+  title:'viqhar mariya',
+  heading:'viqhar',
+  date: 'august 20,2017',
+  content: ` <p>
+                she saw her first time.and by seeing her that was love at frst site he loves her alot.
+                viqhar loves mariya alot...
+              </p>`
+};
+function createTemplate (data){
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+    
+var htmlTemplet=`<html>
+    <head>
+        <title>
+        ${title}
+        </title>
+        <meta name="viewport" content ="width=device-with,initial-scale=1"/>
+         <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+            <a href="/">home</a>
+        </div>
+        <hr/>
+        <h1>
+            ${heading}
+        </h1>
+        <div>
+            ${date}
+        </div>
+        <div>
+           ${content}
+        </div>
+        </div>
+    </body>
+</html>
+`;
+return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
   
 app.get('/one',function (req,res){
-      res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(vickymaru));
 });
 
 app.get('/two',function (req,res){
