@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var vickymaru={
+var articleone={
   title:'viqhar mariya',
   heading:'viqhar',
   date: 'august 20,2017',
@@ -54,7 +54,7 @@ app.get('/', function (req, res) {
 });
   
 app.get('/one',function (req,res){
-    res.send(createTemplate(vickymaru));
+    res.send(createTemplate(articleone));
 });
 
 app.get('/two',function (req,res){
