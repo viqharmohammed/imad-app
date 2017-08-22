@@ -6,34 +6,31 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles={ 
+var articles=}
 `article-one:{
   title:'viqhar mariya',
   heading:'viqhar',
   date: 'august 20,2017',
-  content: ` <p>
+  content:  <p>
                 she saw her first time.and by seeing her that was love at frst site he loves her alot.
                 viqhar loves mariya alot...
-              </p>`
+              </p>
 },
-'article-two:{
+article-two:{
   title:'viqhar mariya',
   heading:'mariya',
   date: 'august 25,2017',
-  content: ` <p>
+  content: <p>
                she also started loving him.....
-              </p>`
+           </p> 
     
 },
-`article-three:{
+article-three:{
      title:'viqhar mariya',
   heading:'viqhar mariya',
   date: 'august 25,2017',
-  content: ` <p>
-               they love each other alot.cant live with out each other.lets see how their love goes on
-             
-},
-};
+  content:  <p>
+               they love each other alot.cant live with out each other.lets see how their love goes on`;
 function createTemplate (data){
     var title=data.title;
     var date=data.date;
