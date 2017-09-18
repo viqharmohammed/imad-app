@@ -9,16 +9,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function (req,res){
+app.get('/article-one',function (req, res){
     res.sendFile(path.join(__dirname,'ui','article-one.html'));
 });
-app.get('/article-three',function (req,res){
+app.get('/article-three',function (req, res){
     res.send('article three is requested and will be serverd here');
 });
-app.get('/ui/style.css',function(req,res){
+app.get('/ui/style.css',function(req, res){
      res.sendFile(path.join(__dirname, 'ui', 'style.html'));
 });
-app.get('/ui/madi.png',function(req,res){
+app.get('/ui/madi.png',function(req, res){
      res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 // Do not change port, otherwise your app won't run on IMAD servers
